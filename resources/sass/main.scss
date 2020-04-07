@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import "./variables";
+@import "./footer";
+@import "./landingpage";
+@import "./errand";
+@import "./header";
+
+
+@mixin flexCenterAll (){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    
+}
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+      
+}
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+h1,h2,h3{
+    font-family: 'Fredoka One', cursive;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1140px;
+    margin:auto;  
+}
+
+.full-height {
+    height: 100vh;
+  }
+  
+  .flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .position-ref {
+    position: relative;
+  }
+  
+  .top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .m-b-md {
+    margin-bottom: 30px;
+  }
+  
+
+
+
+

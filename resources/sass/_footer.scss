@@ -1,0 +1,120 @@
+footer{
+    height: 60vh;
+    padding: 30px;
+    background-color: #dff6fa;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+  
+    .brand{
+        display: block;
+        .image{
+            text-align: center;
+            
+            h3{
+                color: $teal; 
+            }
+            img{
+                height:102px;
+                width: 102px;
+                border-radius: 50%;
+                border: 2px solid $indigo;
+                animation: brandMove 6s;
+            }
+        }
+     
+        p{
+            color:$dark;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
+    @keyframes brandMove{
+    0%{
+        transform: rotate(0deg)
+        }
+    100%{
+        transform: rotate(360deg)  
+        }
+    }
+
+    .social{
+        display:block;
+        height:  100%;      
+        .support{
+            height: 100%; 
+            margin-bottom: 60px;
+            h3{  
+                color:$dark;  
+                width: 100%;
+                text-align: center;
+            }
+            ul{
+                list-style: none;
+                text-align: center;
+                
+            }
+            a{
+                text-decoration: none;
+                color: $dark;
+                &:hover{
+                    font-weight: bold;
+                    color:$teal;
+                }
+            }      
+        }
+
+        .social-links{
+            margin-top: 10px;
+            text-align: center;
+            h3{
+                text-align: center;
+                color:$dark;  
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+                color: $teal;
+                
+            
+            }
+            i{
+                font-size: 28px;
+                margin: 30px 30px;
+                &:hover{
+                    color:$dark;              
+                    } 
+                }      
+            }
+        
+    }
+
+    .extra{
+        display: block;
+        padding: 10px;
+        .company{
+            
+            h3{  
+                color:$dark;  
+                width: 100%;
+                text-align: center;
+            }
+            ul{
+                list-style: none;
+                text-align: center;
+                display: inline;
+                
+            }
+            a{
+                text-decoration: none;
+                color:$dark;
+                font-size: 1em;
+                margin: 1em;
+                &:hover{
+                    font-weight: bold;
+                    color:$teal;
+                }
+            }
+        }
+    }
+}   

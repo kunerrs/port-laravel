@@ -1,0 +1,15 @@
+.navbar{
+    .container{
+        a{
+            font-family: 'Fredoka One', cursive;
+            font-weight: bold;
+            color:$teal;
+            font-size: 1.1em;
+            &:hover{
+                color:$indigo;
+            }
+        }
+    }
+}
+
+

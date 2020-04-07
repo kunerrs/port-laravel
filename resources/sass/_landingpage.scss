@@ -1,0 +1,86 @@
+@mixin flexCenterAll (){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.login{
+    background: red;
+    .links{
+        background: red;
+    }
+}
+
+.content{
+    background-color: #fff; 
+    height: 120vh;
+    @include flexCenterAll();
+    
+    .image{ 
+        padding: 30px;
+        margin: auto;
+        text-align: center;
+        animation: imageMove 2s ease-in;
+        width: 100%;
+        img{
+           height: 70vh;
+           width: 80vh;
+           display: inline-block;
+           margin: 0 50px;
+               
+        }
+        h1{
+            font-size: 2.3em;
+            color: $teal;            
+        }
+        h2{       
+            font-size: 2em;
+            color: $dark;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 12px;
+            color: white;
+            background: $indigo;
+            border: none;
+            border-radius: 3px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            &:hover{
+                background: transparent;
+                color: $indigo;
+                border: 1px solid $indigo;
+            }
+        }
+    }
+}
+
+@keyframes imageMove {
+    0%{
+        opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+.info-mssg{
+    width: 100%;
+    padding: 30px;
+    margin: 30px auto;
+    p{
+        font-weight: bold;
+        text-align: center;
+        color:$green;
+        font-size: 20px;
+    }
+}
+
+
+
+
